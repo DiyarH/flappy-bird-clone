@@ -37,4 +37,9 @@ public class UiManager : MonoBehaviour
         PlayerPrefs.SetInt("High Score", 0);
         Restart();
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
