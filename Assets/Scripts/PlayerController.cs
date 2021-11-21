@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
             eventManager.OnPlayerCollideWithWall.Invoke();
             gameObject.SetActive(false);
         }
-        GetComponent<SpriteRenderer>().transform.eulerAngles = new Vector3(0, 0, rigidbody.velocity.y * 2);
+        //GetComponent<SpriteRenderer>().transform.eulerAngles = new Vector3(0, 0, rigidbody.velocity.y * 2);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
